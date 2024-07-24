@@ -37,4 +37,5 @@ console.log(url.replace("%20", "-"));          // https://www.fm.com/farhat-momi
 
 console.log(url.includes("farhat"));           // true
 
-console.log(gameName.split(" "));              // split returns an array, based on the specified separator
+console.log(gameName.split(" "));           // ["Farhat", "Momin"]        
+  // split returns an array, based on the specified separator  
