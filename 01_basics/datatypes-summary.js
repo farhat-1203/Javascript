@@ -37,3 +37,28 @@ const myFunction = function(){                  // typeof: (Object) function
 }
 
 console.log(typeof myFunction);   // function
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive) => whatever variable is declared, we get a copy of it
+
+let myYoutubeName = "fm.com"
+let anotherName = myYoutubeName
+anotherName = "farhatmomin"
+console.log(anotherName);
+console.log(myYoutubeName);
+
+
+// Heap(Non-Primitive) => using a heap memory, we get a reference of the original value
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl",
+}
+
+let userTwo = userOne
+userTwo.email = "newuser@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
